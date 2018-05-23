@@ -1,0 +1,24 @@
+#Exercício deste tutorial por Raul Campos Nascimento http://pythoncentral.io/pythons-range-function-explained/
+#Um muito obrigado ao meu amigo Rafael Reinehr, eterno amante da liberdade e da justiça pela ajuda na tradução.
+#Direitos autorais é o caramba, viva o conhecimento livre!Você é encorajado a copiar, misturar e disseminar.
+ 
+ 
+ 
+"""99 garrafas de cerveja é uma canção tradicional do Estados Unidos e Canadá .
+ 
+Ele tem uma vida muito longa e um texto repetitivo.
+Geralmente é cantado por crianças em idade escolar durante longas viagens de autocarro ou por batedores .
+ 
+Ele também é usado como um exemplo para iniciantes aprender uma nova linguagem de programação, da mesma forma que Olá mundo! https://en.wikipedia.org/wiki/99_Bottles_of_Beer"""
+ 
+ 
+for i in range(99, 0, -1):
+        if i == 1:
+                print('1 garrafa de cerveja no no muro, 1 garrafa de cerveja!')
+                print('Então tome uma e passe adiante, garrafas de cerveja no muro!')
+        elif i == 2:
+                print('Mais 2 garrafas de cerveja na parede, mais 2 garrafas de cerveja!')
+                print('Então tome uma e passe adiante, mais 1 garrafa de cerveja no muro!')
+        else:
+                print('{0} garrafas de cerveja no no muro, {0} garrafas de cerveja!'.format(i))
+                print('Então tome uma e passe adiante, mais {0} garrafas de cerveja no muro!'.format(i - 1))
