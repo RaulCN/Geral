@@ -3,7 +3,8 @@
 #Direitos autorais é o caramba, viva o conhecimento livre!Você é encorajado a copiar, misturar e disseminar.
  
  
- 
+import time
+
 """99 garrafas de cerveja é uma canção tradicional do Estados Unidos e Canadá .
  
 Ele tem uma vida muito longa e um texto repetitivo.
@@ -21,4 +22,7 @@ for i in range(99, 0, -1):
                 print('Então tome uma e passe adiante, mais 1 garrafa de cerveja no muro!')
         else:
                 print('{0} garrafas de cerveja no no muro, {0} garrafas de cerveja!'.format(i))
+                
+                time.sleep(3)
                 print('Então tome uma e passe adiante, mais {0} garrafas de cerveja no muro!'.format(i - 1))
+                time.sleep(3)
