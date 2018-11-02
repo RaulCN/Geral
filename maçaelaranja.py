@@ -1,3 +1,4 @@
+#Algorítimo retirado de https://www.youtube.com/watch?v=iYg-2sEC3NY&t=320s
 from sklearn import tree
 
 
