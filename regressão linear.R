@@ -1,3 +1,5 @@
+#tutorial executado de https://www.youtube.com/watch?v=N3ZN-MRWuBE
+
 #Regression
 library (ISwR)
 attach (thuesen)
@@ -6,20 +8,20 @@ names (thuesen)
 #Verificar o modelo linear
 lm(short.velocity~blood.glucose)
 
-#extrair outras funÁıes do lm:
+#extrair outras fun√ß√µes do lm:
 summary(lm(short.velocity~blood.glucose))
-#gr·fico de pontos e da reta de regress„o
+#gr√°fico de pontos e da reta de regress√£o
 plot(blood.glucose, short.velocity)
 abline(lm(short.velocity~blood.glucose))
 
-#ResÌduos e valores estimados 
+#Res√≠duos e valores estimados 
 lm.velo <- lm(short.velocity~blood.glucose)
 fitted(lm.velo)#Valores estimados de acordo com o melhor ajuste 
-resid(lm.velo) #diferenÁa entre os valores e os observados
+resid(lm.velo) #diferen√ßa entre os valores e os observados
 
 plot(blood.glucose,short.velocity)
 lines(blood.glucose,fitted(lm.velo))
-#trabalhando sem os dados faltantes, melhor opÁ„o
-options(na.action = na.exclude)
+#trabalhando sem os dados faltantes, melhor op√ß√£o
+options(na.action = na.exclude) #no tutorial n tinha o "="
 segments(blood.glucose,fitted(lm.velo), blood.glucose,short.velocity)
 abline(lm(short.velocity~blood.glucose))
