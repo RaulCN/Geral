@@ -1,5 +1,5 @@
-import yt_dlp
-
+import yt_dlp #atenção, n se esqueça de instalar essa biblioteca! sudo apt-install yt-dlp
+ 
 # Defina a URL do vídeo do YouTube que você deseja baixar o áudio
 url = 'add o endereço do youtube aki'
 
